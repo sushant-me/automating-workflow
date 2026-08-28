@@ -1,7 +1,7 @@
 {
   "start_date": "2026-08-26",
   "total_target_days": 367,
-  "total_commits": 4,
+  "total_commits": 5,
   "history": [
     {
       "day": 1,
@@ -30,6 +30,13 @@
       "timestamp_utc": "2026-08-28 08:22:40 UTC",
       "snippet_title": "Quick Sort",
       "snippet_code": "def quicksort(arr):\n    if len(arr) <= 1:\n        return arr\n    pivot = arr[len(arr) // 2]\n    left = [x for x in arr if x < pivot]\n    middle = [x for x in arr if x == pivot]\n    right = [x for x in arr if x > pivot]\n    return quicksort(left) + middle + quicksort(right)"
+    },
+    {
+      "day": 5,
+      "date": "2026-08-28",
+      "timestamp_utc": "2026-08-28 08:26:10 UTC",
+      "snippet_title": "Two Sum Lookup",
+      "snippet_code": "def two_sum(nums, target):\n    seen = {}\n    for i, num in enumerate(nums):\n        complement = target - num\n        if complement in seen:\n            return [seen[complement], i]\n        seen[num] = i\n    return []"
     }
   ]
 }
