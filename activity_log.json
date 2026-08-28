@@ -1,7 +1,7 @@
 {
   "start_date": "2026-08-26",
   "total_target_days": 367,
-  "total_commits": 3,
+  "total_commits": 4,
   "history": [
     {
       "day": 1,
@@ -23,6 +23,13 @@
       "timestamp_utc": "2026-08-27 08:08:38 UTC",
       "snippet_title": "Binary Search",
       "snippet_code": "def binary_search(arr, target):\n    low, high = 0, len(arr) - 1\n    while low <= high:\n        mid = (low + high) // 2\n        if arr[mid] == target:\n            return mid\n        elif arr[mid] < target:\n            low = mid + 1\n        else:\n            high = mid - 1\n    return -1"
+    },
+    {
+      "day": 4,
+      "date": "2026-08-28",
+      "timestamp_utc": "2026-08-28 08:22:40 UTC",
+      "snippet_title": "Quick Sort",
+      "snippet_code": "def quicksort(arr):\n    if len(arr) <= 1:\n        return arr\n    pivot = arr[len(arr) // 2]\n    left = [x for x in arr if x < pivot]\n    middle = [x for x in arr if x == pivot]\n    right = [x for x in arr if x > pivot]\n    return quicksort(left) + middle + quicksort(right)"
     }
   ]
 }
