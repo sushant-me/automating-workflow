@@ -30,8 +30,9 @@ jobs:
 
       - name: 🚀 Commit and Push Changes to GitHub
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          # Use your GitHub username and account email to count towards your green contribution graph
+          git config --global user.name "sushant-me"
+          git config --global user.email "sushant.poudel2028@gmail.com"
           git add -A
           
           # Only commit if there are changes
