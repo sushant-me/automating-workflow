@@ -1,7 +1,7 @@
 {
   "start_date": "2026-08-26",
   "total_target_days": 367,
-  "total_commits": 7,
+  "total_commits": 8,
   "history": [
     {
       "day": 1,
@@ -51,6 +51,13 @@
       "timestamp_utc": "2026-08-29 06:10:37 UTC",
       "snippet_title": "Factorial Memoization",
       "snippet_code": "memo = {}\ndef factorial(n):\n    if n in (0, 1):\n        return 1\n    if n not in memo:\n        memo[n] = n * factorial(n - 1)\n    return memo[n]"
+    },
+    {
+      "day": 8,
+      "date": "2026-08-30",
+      "timestamp_utc": "2026-08-30 04:18:48 UTC",
+      "snippet_title": "Two Sum Lookup",
+      "snippet_code": "def two_sum(nums, target):\n    seen = {}\n    for i, num in enumerate(nums):\n        complement = target - num\n        if complement in seen:\n            return [seen[complement], i]\n        seen[num] = i\n    return []"
     }
   ]
 }
