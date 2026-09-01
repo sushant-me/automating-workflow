@@ -1,7 +1,7 @@
 {
   "start_date": "2026-08-26",
   "total_target_days": 367,
-  "total_commits": 9,
+  "total_commits": 10,
   "history": [
     {
       "day": 1,
@@ -65,6 +65,13 @@
       "timestamp_utc": "2026-08-31 04:24:02 UTC",
       "snippet_title": "Factorial Memoization",
       "snippet_code": "memo = {}\ndef factorial(n):\n    if n in (0, 1):\n        return 1\n    if n not in memo:\n        memo[n] = n * factorial(n - 1)\n    return memo[n]"
+    },
+    {
+      "day": 10,
+      "date": "2026-09-01",
+      "timestamp_utc": "2026-09-01 04:07:47 UTC",
+      "snippet_title": "Prime Sieve",
+      "snippet_code": "def sieve_of_eratosthenes(limit):\n    primes = [True] * (limit + 1)\n    p = 2\n    while (p * p <= limit):\n        if primes[p]:\n            for i in range(p * p, limit + 1, p):\n                primes[i] = False\n        p += 1\n    return [p for p in range(2, limit + 1) if primes[p]]"
     }
   ]
 }
