@@ -1,7 +1,7 @@
 {
   "start_date": "2026-08-26",
   "total_target_days": 367,
-  "total_commits": 17,
+  "total_commits": 18,
   "history": [
     {
       "day": 1,
@@ -121,6 +121,13 @@
       "timestamp_utc": "2026-09-08 03:36:32 UTC",
       "snippet_title": "Palindrome Checker",
       "snippet_code": "def is_palindrome(s: str) -> bool:\n    cleaned = ''.join(ch.lower() for ch in s if ch.isalnum())\n    return cleaned == cleaned[::-1]"
+    },
+    {
+      "day": 18,
+      "date": "2026-09-09",
+      "timestamp_utc": "2026-09-09 03:41:30 UTC",
+      "snippet_title": "Quick Sort",
+      "snippet_code": "def quicksort(arr):\n    if len(arr) <= 1:\n        return arr\n    pivot = arr[len(arr) // 2]\n    left = [x for x in arr if x < pivot]\n    middle = [x for x in arr if x == pivot]\n    right = [x for x in arr if x > pivot]\n    return quicksort(left) + middle + quicksort(right)"
     }
   ]
 }
