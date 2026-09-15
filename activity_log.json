@@ -1,7 +1,7 @@
 {
   "start_date": "2026-08-26",
   "total_target_days": 367,
-  "total_commits": 23,
+  "total_commits": 24,
   "history": [
     {
       "day": 1,
@@ -163,6 +163,13 @@
       "timestamp_utc": "2026-09-14 03:56:41 UTC",
       "snippet_title": "Two Sum Lookup",
       "snippet_code": "def two_sum(nums, target):\n    seen = {}\n    for i, num in enumerate(nums):\n        complement = target - num\n        if complement in seen:\n            return [seen[complement], i]\n        seen[num] = i\n    return []"
+    },
+    {
+      "day": 24,
+      "date": "2026-09-15",
+      "timestamp_utc": "2026-09-15 03:56:15 UTC",
+      "snippet_title": "Binary Search",
+      "snippet_code": "def binary_search(arr, target):\n    low, high = 0, len(arr) - 1\n    while low <= high:\n        mid = (low + high) // 2\n        if arr[mid] == target:\n            return mid\n        elif arr[mid] < target:\n            low = mid + 1\n        else:\n            high = mid - 1\n    return -1"
     }
   ]
 }
