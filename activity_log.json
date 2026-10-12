@@ -1,7 +1,7 @@
 {
   "start_date": "2026-08-26",
   "total_target_days": 367,
-  "total_commits": 50,
+  "total_commits": 51,
   "history": [
     {
       "day": 1,
@@ -352,6 +352,13 @@
       "timestamp_utc": "2026-10-11 04:41:17 UTC",
       "snippet_title": "Factorial Memoization",
       "snippet_code": "memo = {}\ndef factorial(n):\n    if n in (0, 1):\n        return 1\n    if n not in memo:\n        memo[n] = n * factorial(n - 1)\n    return memo[n]"
+    },
+    {
+      "day": 51,
+      "date": "2026-10-12",
+      "timestamp_utc": "2026-10-12 04:56:41 UTC",
+      "snippet_title": "Quick Sort",
+      "snippet_code": "def quicksort(arr):\n    if len(arr) <= 1:\n        return arr\n    pivot = arr[len(arr) // 2]\n    left = [x for x in arr if x < pivot]\n    middle = [x for x in arr if x == pivot]\n    right = [x for x in arr if x > pivot]\n    return quicksort(left) + middle + quicksort(right)"
     }
   ]
 }
