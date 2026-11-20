@@ -1,7 +1,7 @@
 {
   "start_date": "2026-08-26",
   "total_target_days": 367,
-  "total_commits": 89,
+  "total_commits": 90,
   "history": [
     {
       "day": 1,
@@ -625,6 +625,13 @@
       "timestamp_utc": "2026-11-19 06:28:25 UTC",
       "snippet_title": "Palindrome Checker",
       "snippet_code": "def is_palindrome(s: str) -> bool:\n    cleaned = ''.join(ch.lower() for ch in s if ch.isalnum())\n    return cleaned == cleaned[::-1]"
+    },
+    {
+      "day": 90,
+      "date": "2026-11-20",
+      "timestamp_utc": "2026-11-20 06:14:52 UTC",
+      "snippet_title": "Factorial Memoization",
+      "snippet_code": "memo = {}\ndef factorial(n):\n    if n in (0, 1):\n        return 1\n    if n not in memo:\n        memo[n] = n * factorial(n - 1)\n    return memo[n]"
     }
   ]
 }
